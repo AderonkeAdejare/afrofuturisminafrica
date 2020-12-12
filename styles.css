@@ -1,0 +1,163 @@
+#title {
+    color: #6E3FE6;
+}
+
+body {
+    /* gradient help from https://cssgradient.io/ */
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7861519607843137) 32%, rgba(0,212,255,1) 85%);
+    text-align: center;
+}
+
+
+/* make navbar transparent
+help from https://stackoverflow.com/questions/16392952/css-to-make-bootstrap-navbar-transparent */
+.navbar-inner {
+    background: transparent;
+    color: #B0B0B0;
+}
+
+h2 {
+    font-size: 20px;
+    opacity: 10;
+    transition: opacity .5s .25s ease-out;
+}
+
+h2 .is-visible{
+    opacity: 1;
+}
+
+/*other stylistic things*/
+
+.lowerpg {
+    color: 	#C8C8C8;
+}
+
+.nav-link {
+    color: #484848;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.no-stretch {
+     width: auto;
+}
+
+a {
+     color: #6E3FE6;
+}
+
+span
+{
+    color: #090979;
+    font-weight: bold;
+}
+
+.lowerhighlight {
+    color: #FA9332;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/*for fade in on scroll. help with this from https://github.com/michalsnik/aos and https://www.youtube.com/watch?v=ptfUwPJbGlQ*/
+
+.medium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 600px) {
+    .medium {
+        display: block;
+    }
+}
+
+/*for explore page*/
+.quiz-labels {
+    font-size: 20px;
+    color: white;
+}
+
+select {
+    border: 5px solid #6E3FE6;
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+/*for results page*/
+#extender {
+    opacity: 0;
+    width: auto;
+    height: auto;
+}
+
+.result {
+    width: auto;
+    height: auto;
+}
+
+/*for pop up I couldn't complete in time*/
+/*.modal{*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+
+/*    transform: translate(-50%, -50%);*/
+    /*transition: 200ms ease-in-out;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 10px ;*/
+    /*z-index: 10;*/
+/*    background-color: white;*/
+/*    width: 500px;*/
+/*    max-width: 80%;*/
+/*}*/
+
+/*.modal-header {*/
+/*    padding: 10px 15px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    border-bottom: 1px solid black;*/
+/*}*/
+
+/*.modal-header .title {*/
+/*    font-size: 1.25rem;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.modal-header .close-button{*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    background: none;*/
+/*    font-size: 1.25rem;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.modal-body {*/
+/*    padding: 10px 15px;*/
+
+/*}*/
+
+/*#modal {*/
+/*    display: none;*/
+
+/*}*/
+
+/*.modal.active {*/
+/*    transform: translate(-50%, -50%) scale(1);*/
+/*}*/

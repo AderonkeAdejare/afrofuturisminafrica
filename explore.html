@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Explore
+{% endblock %}
+
+{% block main %}
+
+<h1> Conclusion </h1>
+<p> The diversity of the African Diaspora has lead to the diversity of our storytelling.  Afrofuturism and Africanfuturism are ways for people of the African Diaspora to imagine worlds with them at the forefront and influence our world to become like that.
+They are tools liberation of Black people within Western societies and for decolonization of African societies. They inspire a sense of wonder and hope to fuel our confrontation of the past, exploration of the present, and creation of the future.
+</p>
+
+<br> <br> <br>
+
+<h3>Do you want to explore more Afrofuturism, Africanfuturism, and Africanjujuism? <br> Fill out the quiz below to find out what work is best for you! </h3>
+<br> <br>
+
+<!-- help with quiz from https://radiusofcircle.blogspot.com/2016/03/making-quiz-website-with-python.html,
+https://stackoverflow.com/questions/45877080/how-to-create-dropdown-menu-from-python-list-using-flask-and-html
+https://skillforge.com/how-to-create-a-placeholder-on-a-select-dropdown-in-html/-->
+
+<form action='/explore' method='POST' id="form">
+    <p class="quiz-labels"> Genre: </p>
+    <select name="g" form="form">
+        {% for g in genres %}
+        <option disabled hidden selected>Select One</option>
+        <option name = "{{ g }}">{{ g }}</option>"
+        {% endfor %}
+     </select>
+    <br> <br> <br>
+
+    <p class="quiz-labels">Time Period: </p>
+    <select name="t" form="form">
+        <option disabled hidden selected>Select One</option>
+        {% for t in times %}
+        <option name= "{{ t }}">{{ t }}</option>"
+        {% endfor %}
+    </select>
+    <br> <br> <br>
+
+    <p class="quiz-labels"> Theme: </p>
+    <select name="h" form="form">
+        <option disabled hidden selected>Select One</option>
+        {% for h in themes %}
+        <option name= "{{ h }}">{{ h }}</option>"
+        {% endfor %}
+     </select>
+    <br> <br> <br>
+
+    <p class="quiz-labels"> Medium: </p>
+    <select name="m" form="form">
+        <option disabled hidden selected>Select One</option>
+        {% for m in mediums %}
+        <option name= "{{ m }}">{{ m }}</option>"
+        {% endfor %}
+    </select>
+    <br> <br> <br>
+
+    <button type="submit" class="btn btn-primary"/> Submit </button>
+</form>
+{% endblock %}
